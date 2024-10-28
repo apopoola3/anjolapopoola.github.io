@@ -16,7 +16,7 @@ courses:
 - {name: 'Stellar Structures', url: 'stellar-structures'}
 
 social:
-- {icon: 'email', link: 'mailto:apopoola3@gatech.edu'}
+- {icon: 'envelope', link: 'mailto:apopoola3@gatech.edu'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/anjpopoola/'}
 - {icon: 'google scholar', link: 'https://scholar.google.com/citations?user=HnjeRToAAAAJ&hl=en&oi=ao'}
 - {icon: 'researchgate', link: 'https://www.researchgate.net/profile/Anjolaoluwa-Popoola'}
