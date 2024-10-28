@@ -22,4 +22,4 @@ social:
 - {icon: 'linkedin', link: 'https://linkedin.com/in/lenpaul'}
 
 contacts:
-- {name: 'Anjolaoluwa Popoola', title: 'PhD. Machine Learning Student', department: 'H. Milton Stewart School of Industrial and Systems Engineering', institution: 'Georgia Institute of Technology', institution_address: '755 Ferst Dr NW, Atlanta, GA 30332', email: 'apopoola3@gatech.edu', office: 'Main 435', image: 'assets/img/contact.jpg'}
+- {name: 'Anjolaoluwa Popoola', title: 'PhD. Machine Learning Student', department: 'H. Milton Stewart School of Industrial and Systems Engineering', institution: 'Georgia Institute of Technology', institution_address: '755 Ferst Dr NW, Atlanta, GA 30332', email: 'apopoola3@gatech.edu', office: 'Main 435', image: 'assets/img/headshot.jpg'}
