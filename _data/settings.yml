@@ -16,10 +16,10 @@ courses:
 - {name: 'Stellar Structures', url: 'stellar-structures'}
 
 social:
-- {icon: 'github', link: 'https://github.com/LeNPaul'}
-- {icon: 'twitter', link: 'https://twitter.com/paululele'}
-- {icon: 'instagram', link: 'https://instagram.com/paululele'}
-- {icon: 'linkedin', link: 'https://linkedin.com/in/lenpaul'}
+- {icon: 'email', link: 'mailto:apopoola3@gatech.edu'}
+- {icon: 'linkedin', link: 'https://www.linkedin.com/in/anjpopoola/'}
+- {icon: 'google scholar', link: 'https://scholar.google.com/citations?user=HnjeRToAAAAJ&hl=en&oi=ao'}
+- {icon: 'researchgate', link: 'https://www.researchgate.net/profile/Anjolaoluwa-Popoola'}
 
 contacts:
 - {name: 'Anjolaoluwa Popoola', title: 'PhD. Machine Learning Student', department: 'H. Milton Stewart School of Industrial and Systems Engineering', institution: 'Georgia Institute of Technology', institution_address: '755 Ferst Dr NW, Atlanta, GA 30332', email: 'apopoola3@gatech.edu', office: 'Main 435', image: 'assets/img/headshot.jpg'}
