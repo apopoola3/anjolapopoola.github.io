@@ -1,7 +1,6 @@
 menu:
 - {name: 'Publications', url: '/publications'}
 - {name: 'Teaching and Service', url: '/teaching'}
-- {name: 'Honors and Awards', url: '/honors'}
 - {name: 'CV', url: '/cv'}
 - {name: 'Contact', url: '/contact'}
 
@@ -22,10 +21,6 @@ awards:
   - {title_main: "Master Modeler Competition, Bronze Winner,", title_linked: "Georgia Tech", year: "2022"}
   - {title_main: "Best Student Poster Award,", title_linked: "Transportation Research Board Conference", year: "2018", link_url: "https://trb-annual-meeting.nationalacademies.org"}
   - {title_main: "Dwight David Eisenhower Transportation Fellowship,", title_linked: "", year: "2018", link_url: "https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program"}
-honors:
-- {name: 'Vector Calculus', url: 'vector-calculus'}
-- {name: 'Quantum Mechanics', url: 'quantum-mechanics'}
-- {name: 'Stellar Structures', url: 'stellar-structures'}
 
 social:
 - {icon: 'envelope', link: 'mailto:apopoola3@gatech.edu'}
