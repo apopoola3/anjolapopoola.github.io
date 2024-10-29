@@ -48,23 +48,25 @@ layout: default
 </div>
 
 
-<div class="mb-5">
-  <h3 class="fw-bold">Selected Awards and Honors</h3>
-  <ul class="list-unstyled">
-    {% for award in site.data.settings.awards %}
-      <li class="mb-2">
-        {% if award.link_url %}
-          <a href="{{ award.link_url }}" class="fw-bold" target="_blank">{{ award.title }}</a>
-        {% else %}
-          <span class="fw-bold">{{ award.title }}</span>
-        {% endif %}
-        {% if award.year %}
-          , {{ award.year }}
-        {% endif %}
-        {% if award.link_text and award.link_url %}
-          (<a href="{{ award.link_url }}" target="_blank">{{ award.link_text }}</a>)
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
+<div class="row g-5 mb-5">
+  <div class="col-md-12">
+    <h3 class="fw-bold border-bottom pb-3 mb-5">Selected Awards and Honors</h3>
+    <ul class="list-unstyled">
+      {% for award in site.data.settings.awards %}
+        <li class="mb-2">
+          {% if award.link_url %}
+            <a href="{{ award.link_url }}" target="_blank" class="fw-bold">{{ award.title_main }}</a>
+          {% else %}
+            <span class="fw-bold">{{ award.title_main }}</span>
+          {% endif %}
+          {% if award.title_linked %}
+            <span> {{ award.title_linked }}</span>
+          {% endif %}
+          {% if award.year %}
+            , {{ award.year }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 </div>
