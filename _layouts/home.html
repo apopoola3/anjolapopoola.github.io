@@ -51,7 +51,7 @@ layout: default
 <div class="mb-5">
   <h3 class="fw-bold">Selected Awards and Honors</h3>
   <ul class="list-unstyled">
-    {% for award in site.data.settings.awards %}
+    {% for award in site.data.settings %}
       <li class="mb-2">
         {% if award.link_url %}
           <a href="{{ award.link_url }}" class="fw-bold" target="_blank">{{ award.title }}</a>
