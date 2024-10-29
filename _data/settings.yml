@@ -20,7 +20,7 @@ awards:
   - {title_main: "Trailblazers in Engineering Fellow,", title_linked: "Purdue University", year: "2023", link_url: "https://engineering.purdue.edu/Engr/Trailblazers"}
   - {title_main: "Master Modeler Competition, Bronze Winner,", title_linked: "Georgia Tech", year: "2022"}
   - {title_main: "Best Student Poster Award,", title_linked: "Transportation Research Board Conference", year: "2018", link_url: "https://trb-annual-meeting.nationalacademies.org"}
-  - {title_main: "Dwight David Eisenhower Transportation Fellowship,", title_linked: "", year: "2018", link_url: "https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program"}
+  - {title_main: "Dwight David Eisenhower Transportation Fellowship,", year: "2018", link_url: "https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program"}
 
 social:
 - {icon: 'envelope', link: 'mailto:apopoola3@gatech.edu'}
