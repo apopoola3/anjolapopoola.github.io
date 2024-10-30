@@ -44,9 +44,9 @@ layout: default
 </div>
 
 <div class="container">
-  <h3 class="fw-bold text-primary mb-3">Recent Updates</h3>
+  <h4 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Updates</h4>
   <ul class="list-unstyled">
-    {% for update in site.data.updates %}
+    {% for update in site.data.updates.updates %}
       <li class="mb-1">
         <strong>{{ update.date }}</strong> 
         {% if update.link_text and update.link_url %}
