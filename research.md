@@ -3,4 +3,4 @@ layout: research
 title: "Research"
 ---
 
-Personally, i really like research. I will continue with my research interests abd applications in a bit 
+Personalized Prediction and Control of Blood Glucose Levels using Dynamic System Modeling

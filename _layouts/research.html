@@ -47,7 +47,22 @@ layout: default
     <div class="col-md-12">
       <p>
         {{ conference.authors | replace: "Popoola, A.", "<strong>Popoola, A.</strong>" }}
-        ({{ conference.year }}). <strong>{{ conference.title }}</strong>. <span class="text-muted">{{ conference.institution }}</span>. {{ conference.conference }}.
+        ({{ conference.year }}). <strong>{{ conference.title }}</strong>. {{ conference.conference }}.
+        {% if conference.presenter %}<br><em>Presented by: {{ conference.presenter }}</em>{% endif %}
+      </p>
+    </div>
+  </div>
+  {% endfor %}
+
+  <!-- Conference Posters Section -->
+  <h4 class="fw-bold border-bottom pb-3 mb-5">Conference Posters</h4>
+  {% for conference in site.data.publications.posters %}
+  <div class="row g-4 mb-4">
+    <div class="col-md-12">
+      <p>
+        {{ conference.authors | replace: "Popoola, A.", "<strong>Popoola, A.</strong>" }}
+        ({{ conference.year }}). <strong>{{ conference.title }}</strong>. {{ conference.conference }}.
+        {% if conference.presenter %}<br><em>Presented by: {{ conference.presenter }}</em>{% endif %}
       </p>
     </div>
   </div>

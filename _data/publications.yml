@@ -31,10 +31,65 @@ work_in_progress:
     institution: "Georgia Institute of Technology, Atlanta, GA, USA"
 
 presentations:
+  - authors: "Popoola, A., Kazemian, P., and Paynabar, K."
+    bold_name: "Popoola, A."
+    title: "Personalized Prediction and Control of Blood Glucose Levels using Dynamic System Modeling"
+    conference: "INFORMS 2024 Annual Meeting, Seattle, WA"
+    year: "2024"
+
   - authors: "Popoola, A., Bugg, C., Garcia, G., and Paynabar, K."
     bold_name: "Popoola, A."
     title: "Reducing Homelessness Among Foster Care Youth: A Predictive Approach Using Ensemble Methods"
-    institution: "Georgia Institute of Technology, Atlanta, GA, USA"
     conference: "Third annual workshop on AI and Analytics for Social Good, College Park, MD, United States"
+    year: "2024"
+  
+  - authors: "Popoola, A., McNealey, A., Duhart, A. and Mullins, C. "
+    bold_name: "Popoola, A."
+    title: "Bridging Dreams and Realities: iExperience High School Initiative Introducing Students to Industrial & Systems Engineering at Georgia Tech"
+    conference: "Southeastern College Learning Center Association Conference, NC"
+    year: "2024"
+
+  - authors: "Popoola, A., Frediani, J., Hartman, T., and Paynabar, K."
+    bold_name: "Popoola, A."
+    title: "Mitigating Underreported Error in Food Frequency Questionnaire Data Using a Supervised Machine Learning Method and Error Adjustment Algorithm"
+    conference: "INFORMS 2023 Annual Meeting, Phoenix, AZ"
+    year: "2023"
+    
+  - authors: "Popoola, A., Frediani, J., Hartman, T., and Paynabar, K."
+    bold_name: "Popoola, A."
+    title: "Mitigating Underreported Error in Food Frequency Questionnaire Data Using a Supervised Machine Learning Method and Error Adjustment Algorithm"
+    conference: "IISE 2023 Annual Meeting, New Orleans, LA"
+    year: "2023, Session Chair"
+
+  - authors: "Strickland, D. and Popoola, A."
+    bold_name: "Popoola, A."
+    title: "Creating an Inclusive Classroom Learning Experience"
+    conference: "INFORMS 2022 Annual Meeting, Indianapolis, IN"
+    year: "2022"
 
 posters:
+  - authors: "Popoola, A., Frediani, J., Hartman, T., and Paynabar, K."
+    bold_name: "Popoola, A."
+    title: "Mitigating Underreported Error in Food Frequency Questionnaire Data Using a Supervised Machine Learning Method and Error Adjustment Algorithm"
+    conference: "Trailblazers in Engineering Program, West Lafayette, IN"
+    year: "2023"
+
+  - authors: "Smith, J., Popoola, A., Garcia. D., and Gray, M."
+    bold_name: "Popoola, A."
+    title: "Farm Area Rapid Transit: A Case for Poultry Powered Transportation"
+    conference: "Transportation Research Board Conference, Washington, DC"
+    year: "2019"
+
+  - authors: "Joerger, R. and Popoola, A."
+    bold_name: "Popoola, A."
+    title: "Prevention of Listeria Monocytogenes Transmission from Biofilm to Produce"
+    conference: "Lincoln University Science Fair, Oxford, PA"
+    year: "2017"
+    
+  - authors: "Joerger, R. and Popoola, A."
+    bold_name: "Popoola, A."
+    title: "Prevention of Listeria Monocytogenes Transmission from Biofilm to Produce"
+    conference: "University of Delaware Undergraduate Research Symposium, Newark, DE"
+    year: "2017"
+
+
