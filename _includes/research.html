@@ -11,18 +11,13 @@
   {% for paper in site.data.publications.publications %}
   <div class="row g-4 mb-4">
     <div class="col-md-12">
-      <!-- Authors formatted as a sentence with your name in bold -->
+      <!-- Authors formatted with "Popoola, A." automatically bolded -->
       <p>
-        {% assign authors = paper.authors | split: "," %}
-        {% for author in authors %}
-          {% if author contains paper.bold_name %}
-            <strong>{{ author | strip }}</strong>
-          {% else %}
-            {{ author | strip }}
-          {% endif %}
-          {% if forloop.last == false %}, {% endif %}
-        {% endfor %}
-        ({{ paper.year }}). <strong>{{ paper.title }}</strong>. <span class="text-muted">{{ paper.institution }}</span>. <em>{{ paper.journal }}</em>{% if paper.doi %} DOI: <a href="{{ paper.link }}" target="_blank">{{ paper.doi }}</a>{% endif %}.
+        {{ paper.authors | replace: "Popoola, A.", "<strong>Popoola, A.</strong>" }}
+        ({{ paper.year }}). <strong>{{ paper.title }}</strong>. <span class="text-muted">{{ paper.institution }}</span>.
+        <em>{{ paper.journal }}</em>
+        {% if paper.doi %} DOI: <a href="{{ paper.doi_link }}" target="_blank">{{ paper.doi }}</a>{% endif %}
+        {% if paper.ark %} ARK: <a href="{{ paper.ark_link }}" target="_blank">{{ paper.ark }}</a>{% endif %}.
       </p>
     </div>
   </div>
@@ -34,36 +29,20 @@
   <div class="row g-4 mb-4">
     <div class="col-md-12">
       <p>
-        {% assign authors = work.authors | split: "," %}
-        {% for author in authors %}
-          {% if author contains work.bold_name %}
-            <strong>{{ author | strip }}</strong>
-          {% else %}
-            {{ author | strip }}
-          {% endif %}
-          {% if forloop.last == false %}, {% endif %}
-        {% endfor %}
+        {{ work.authors | replace: "Popoola, A.", "<strong>Popoola, A.</strong>" }}
         ({{ work.year }}). <strong>{{ work.title }}</strong>. <span class="text-muted">{{ work.institution }}</span>.
       </p>
     </div>
   </div>
   {% endfor %}
 
-  <!-- Conference Proceedings Section -->
+  <!-- Conference Presentations Section -->
   <h4 class="fw-bold border-bottom pb-3 mb-5">Conference Presentations</h4>
   {% for conference in site.data.publications.presentations %}
   <div class="row g-4 mb-4">
     <div class="col-md-12">
       <p>
-        {% assign authors = conference.authors | split: "," %}
-        {% for author in authors %}
-          {% if author contains conference.bold_name %}
-            <strong>{{ author | strip }}</strong>
-          {% else %}
-            {{ author | strip }}
-          {% endif %}
-          {% if forloop.last == false %}, {% endif %}
-        {% endfor %}
+        {{ conference.authors | replace: "Popoola, A.", "<strong>Popoola, A.</strong>" }}
         ({{ conference.year }}). <strong>{{ conference.title }}</strong>. <span class="text-muted">{{ conference.institution }}</span>. {{ conference.conference }}.
       </p>
     </div>
