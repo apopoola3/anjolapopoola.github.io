@@ -2,15 +2,13 @@
 layout: default
 ---
 
-{{ content }}
-
 
 <div class="container">
 
   <!-- Research Section -->
   <h3 class="fw-bold border-bottom pb-3 mb-5">Research</h3>
   <div class="mb-5">
-    {{ content }}
+    <p>{{ site.research | markdownify }}</p>
   </div>
 
   <!-- Publications Section -->
