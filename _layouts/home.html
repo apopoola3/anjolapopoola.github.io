@@ -2,20 +2,20 @@
 layout: default
 ---
 
-<div class="row g-5 mb-5">
-  <div class="col-md-6">
+<div class="row g-4 mb-5">
+  <div class="col-12 col-md-6">
     <h3 class="fw-bold">About Me</h3>
     {{ content }}
   </div>
-  <div class="col-md-6">
-    <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" width="100%" style="margin-left: 20px;">
+  <div class="col-12 col-md-6 d-flex justify-content-center">
+    <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" class="img-fluid" style="max-width: 80%; margin-left: 20px;">
   </div>
 </div>
 
 
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-5">Selected Awards and Honors</h3>
+<div class="row g-4 mb-5">
+  <div class="col-12">
+    <h3 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Selected Awards and Honors</h3>
     <ul class="list-unstyled">
       {% for award in site.data.settings.awards %}
         <li class="mb-2">
@@ -25,7 +25,7 @@ layout: default
             <span class="fw-bold">{{ award.title_main }}</span>
           {% endif %}
           {% if award.title_linked %}
-            <span> {{ award.title_linked }}</span>
+            <span>{{ award.title_linked }}</span>
           {% endif %}
           {% if award.year %}
             , {{ award.year }}
@@ -34,5 +34,4 @@ layout: default
       {% endfor %}
     </ul>
   </div>
-</div>
 
