@@ -3,7 +3,7 @@
   <!-- Research Section -->
   <h3 class="fw-bold border-bottom pb-3 mb-5">Research</h3>
   <div class="mb-5">
-    {{ site.data.research | markdownify }}
+    {{ content }}
   </div>
 
   <!-- Publications Section -->
@@ -29,8 +29,7 @@
   <div class="row g-4 mb-4">
     <div class="col-md-12">
       <p>
-        {{ work.authors | replace: "Popoola, A.", "<strong>Popoola, A.</strong>" }}
-        ({{ work.year }}). <strong>{{ work.title }}</strong>. <span class="text-muted">{{ work.institution }}</span>.
+        {{ work.authors | replace: "Popoola, A.", "<strong>Popoola, A.</strong>" }} <strong>{{ work.title }}</strong>. <span class="text-muted">{{ work.institution }}</span>.
       </p>
     </div>
   </div>
