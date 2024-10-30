@@ -1,26 +1,15 @@
 <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-5 border-bottom">
-  <div class="text-center text-md-start">
+  <div>
     <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
       <span class="fs-4 fw-bold">{{ site.title }}</span>
     </a>
     <a href="{{ site.github.url }}/" class="d-flex align-items-center text-decoration-none">
-      <span class="text-muted">{{ site.description }}</span>
+      <span>{{ site.description }}</span>
     </a>
   </div>
-
-  <!-- Navbar for mobile and desktop -->
-  <nav class="navbar navbar-expand-md navbar-light bg-light w-100">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        {% for item in site.data.settings.menu %}
-          <li class="nav-item">
-            <a class="nav-link" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+  <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+    {% for item in site.data.settings.menu %}
+      <a class="me-3 py-2 text-decoration-none" href="{{ site.github.url }}{{ item.url }}">{{ item.name }}</a>
+    {% endfor %}
   </nav>
 </header>
