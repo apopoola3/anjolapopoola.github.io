@@ -3,12 +3,12 @@
 <div class="row g-5 mb-5">
   <h3 class="fw-bold mb-4">Research</h3>
   <div class="mb-4">
-    {{ site.data.research | markdownify }}
+    {{ site.research | markdownify }}
   </div>
 
   <h4 class="fw-semibold mt-4 mb-3" style="font-size: 1.15em;">Publications</h4>
   <ul class="list-unstyled border-bottom">
-    {% for paper in site.data.publications.refereed_journal_papers %}
+    {% for paper in site.data.publications.publications %}
       <li class="pb-3 mb-3 border-bottom">
         {% assign authors = paper.authors | split: "," %}
         {% for author in authors %}
@@ -45,7 +45,7 @@
     {% endfor %}
   </ul>
 
-  <h4 class="fw-semibold mt-4 mb-3" style="font-size: 1.15em;">Conference Proceedings</h4>
+  <h4 class="fw-semibold mt-4 mb-3" style="font-size: 1.15em;">Conference Presentations</h4>
   <ul class="list-unstyled border-bottom">
     {% for conference in site.data.publications.conference_proceedings %}
       <li class="pb-3 mb-3 border-bottom">
