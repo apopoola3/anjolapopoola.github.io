@@ -8,6 +8,15 @@ publications:
     doi: "10.1186/s12911-023-02262-9"
     link: "https://doi.org/10.1186/s12911-023-02262-9"
 
+  - authors: "Owosela B., Popoola, A., Kedar S."
+    bold_name: "Popoola, A."
+    year: "2024"
+    title: "Generative Adversarial Networks in Ophthalmology"
+    institution: "Emory University, Georgia Institute of Technology, Atlanta, GA, USA"
+    conference: "North American Neuro-Ophthalmology society"
+    ark: "ark:/87278/s6nshzwq"
+    ark_link: "https://n2t.net/ark:/87278/s6nshzwq"
+
 
 
 work_in_progress:
@@ -15,3 +24,10 @@ work_in_progress:
     bold_name: "Popoola, A."
     title: "Personalized Prediction and Control of Blood Glucose Levels using Dynamic System Modeling."
     institution: "Georgia Institute of Technology, Case Western Reserve University, USA"
+  
+  - authors: "Popoola, A., Bugg, C., Garcia, G., and Paynabar, K."
+    bold_name: "Popoola, A."
+    title: "Reducing Homelessness Among Foster Care Youth: A Predictive Approach Using Ensemble Methods"
+    institution: "Georgia Institute of Technology, Atlanta, GA, USA"
+
+presentations:

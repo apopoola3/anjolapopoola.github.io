@@ -1,18 +1,17 @@
-
 <div class="container">
 
   <!-- Research Section -->
   <h3 class="fw-bold border-bottom pb-3 mb-5">Research</h3>
   <div class="mb-5">
-    {{ site.research | markdownify }}
+    {{ site.data.research | markdownify }}
   </div>
 
   <!-- Publications Section -->
-  <h3 class="fw-bold border-bottom pb-3 mb-5">Refereed Journal Papers</h3>
+  <h4 class="fw-bold border-bottom pb-3 mb-5">Publications</h4>
   {% for paper in site.data.publications.publications %}
   <div class="row g-4 mb-4">
     <div class="col-md-12">
-      <!-- Authors with bolded name -->
+      <!-- Authors formatted as a sentence with your name in bold -->
       <p>
         {% assign authors = paper.authors | split: "," %}
         {% for author in authors %}
@@ -23,16 +22,14 @@
           {% endif %}
           {% if forloop.last == false %}, {% endif %}
         {% endfor %}
+        ({{ paper.year }}). <strong>{{ paper.title }}</strong>. <span class="text-muted">{{ paper.institution }}</span>. <em>{{ paper.journal }}</em>{% if paper.doi %} DOI: <a href="{{ paper.link }}" target="_blank">{{ paper.doi }}</a>{% endif %}.
       </p>
-      <p class="fw-bold">{{ paper.title }}</p>
-      <p class="text-muted">{{ paper.institution }}</p>
-      <p><em>{{ paper.journal }}</em>{% if paper.doi %} DOI: <a href="{{ paper.link }}" target="_blank">{{ paper.doi }}</a>{% endif %}</p>
     </div>
   </div>
   {% endfor %}
 
   <!-- Work In Progress Section -->
-  <h3 class="fw-bold border-bottom pb-3 mb-5">Work In Progress</h3>
+  <h4 class="fw-bold border-bottom pb-3 mb-5">Work In Progress</h4>
   {% for work in site.data.publications.work_in_progress %}
   <div class="row g-4 mb-4">
     <div class="col-md-12">
@@ -46,15 +43,14 @@
           {% endif %}
           {% if forloop.last == false %}, {% endif %}
         {% endfor %}
+        ({{ work.year }}). <strong>{{ work.title }}</strong>. <span class="text-muted">{{ work.institution }}</span>.
       </p>
-      <p class="fw-bold">{{ work.title }}</p>
-      <p class="text-muted">{{ work.institution }}</p>
     </div>
   </div>
   {% endfor %}
 
   <!-- Conference Proceedings Section -->
-  <h3 class="fw-bold border-bottom pb-3 mb-5">Conference Presentations</h3>
+  <h4 class="fw-bold border-bottom pb-3 mb-5">Conference Presentations</h4>
   {% for conference in site.data.publications.presentations %}
   <div class="row g-4 mb-4">
     <div class="col-md-12">
@@ -68,10 +64,8 @@
           {% endif %}
           {% if forloop.last == false %}, {% endif %}
         {% endfor %}
+        ({{ conference.year }}). <strong>{{ conference.title }}</strong>. <span class="text-muted">{{ conference.institution }}</span>. {{ conference.conference }}.
       </p>
-      <p class="fw-bold">{{ conference.title }}</p>
-      <p class="text-muted">{{ conference.institution }}</p>
-      <p>{{ conference.conference }}</p>
     </div>
   </div>
   {% endfor %}
