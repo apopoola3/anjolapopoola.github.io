@@ -31,3 +31,10 @@ work_in_progress:
     institution: "Georgia Institute of Technology, Atlanta, GA, USA"
 
 presentations:
+  - authors: "Popoola, A., Bugg, C., Garcia, G., and Paynabar, K."
+    bold_name: "Popoola, A."
+    title: "Reducing Homelessness Among Foster Care Youth: A Predictive Approach Using Ensemble Methods"
+    institution: "Georgia Institute of Technology, Atlanta, GA, USA"
+    conference: "Third annual workshop on AI and Analytics for Social Good, College Park, MD, United States"
+
+posters:
