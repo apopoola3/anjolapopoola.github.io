@@ -12,17 +12,17 @@ layout: default
   </div>
 </div>
 
-<div class="row g-4 mb-5">
+<div class="row g-3 mb-4"> <!-- Reduced outer row gutter and bottom margin -->
   <div class="col-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Selected Awards and Honors</h3>
+    <h3 class="fw-bold border-bottom pb-2 mb-3 text-center text-md-start">Education</h3> <!-- Reduced padding and margin here -->
     <ul class="list-unstyled">
       {% for edu in site.data.settings.education %}
-      <div class="row g-5 mb-5">
-        <div class="col-md-12">
-          <div class="d-flex align-items-start mb-3">
-            <i class="fas fa-graduation-cap me-3" style="font-size: 1.5em;"></i> <!-- Education icon -->
+      <div class="row g-2 mb-3"> <!-- Reduced inner row gutter and margin -->
+        <div class="col-12">
+          <div class="d-flex align-items-start mb-2"> <!-- Reduced margin here -->
+            <i class="fas fa-graduation-cap me-2" style="font-size: 1.3em;"></i> <!-- Smaller icon size -->
             <div>
-              <h5 class="fw-bold mb-0">{{ edu.degree }}, {{ edu.year }}</h5>
+              <h5 class="fw-bold mb-1">{{ edu.degree }}, {{ edu.year }}</h5> <!-- Reduced bottom margin here -->
               <small class="text-muted">{{ edu.institution }}</small>
               
               {% if edu.minor %}
@@ -40,7 +40,6 @@ layout: default
                   </small>
                 </p>
               {% endif %}
-              
             </div>
           </div>
         </div>
@@ -48,6 +47,7 @@ layout: default
       {% endfor %}
     </ul>
   </div>
+</div>
 
 
 <div class="row g-4 mb-5">
