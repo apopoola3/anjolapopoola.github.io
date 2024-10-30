@@ -1,15 +1,19 @@
 
+<div class="container">
 
-<div class="row g-5 mb-5">
-  <h3 class="fw-bold mb-4">Research</h3>
-  <div class="mb-4">
+  <!-- Research Section -->
+  <h3 class="fw-bold border-bottom pb-3 mb-5">Research</h3>
+  <div class="mb-5">
     {{ site.research | markdownify }}
   </div>
 
-  <h4 class="fw-semibold mt-4 mb-3" style="font-size: 1.15em;">Publications</h4>
-  <ul class="list-unstyled border-bottom">
-    {% for paper in site.data.publications.publications %}
-      <li class="pb-3 mb-3 border-bottom">
+  <!-- Publications Section -->
+  <h3 class="fw-bold border-bottom pb-3 mb-5">Refereed Journal Papers</h3>
+  {% for paper in site.data.publications.publications %}
+  <div class="row g-4 mb-4">
+    <div class="col-md-12">
+      <!-- Authors with bolded name -->
+      <p>
         {% assign authors = paper.authors | split: "," %}
         {% for author in authors %}
           {% if author contains paper.bold_name %}
@@ -19,17 +23,20 @@
           {% endif %}
           {% if forloop.last == false %}, {% endif %}
         {% endfor %}
-        ({{ paper.year }}). <span class="fw-bold">{{ paper.title }}</span>.<br>
-        <span class="text-muted">{{ paper.institution }}</span>. <em>{{ paper.journal }}</em>.
-        {% if paper.doi %} DOI: <a href="{{ paper.link }}" target="_blank">{{ paper.doi }}</a>{% endif %}.
-      </li>
-    {% endfor %}
-  </ul>
+      </p>
+      <p class="fw-bold">{{ paper.title }}</p>
+      <p class="text-muted">{{ paper.institution }}</p>
+      <p><em>{{ paper.journal }}</em>{% if paper.doi %} DOI: <a href="{{ paper.link }}" target="_blank">{{ paper.doi }}</a>{% endif %}</p>
+    </div>
+  </div>
+  {% endfor %}
 
-  <h4 class="fw-semibold mt-4 mb-3" style="font-size: 1.15em;">Work In Progress</h4>
-  <ul class="list-unstyled border-bottom">
-    {% for work in site.data.publications.work_in_progress %}
-      <li class="pb-3 mb-3 border-bottom">
+  <!-- Work In Progress Section -->
+  <h3 class="fw-bold border-bottom pb-3 mb-5">Work In Progress</h3>
+  {% for work in site.data.publications.work_in_progress %}
+  <div class="row g-4 mb-4">
+    <div class="col-md-12">
+      <p>
         {% assign authors = work.authors | split: "," %}
         {% for author in authors %}
           {% if author contains work.bold_name %}
@@ -39,16 +46,19 @@
           {% endif %}
           {% if forloop.last == false %}, {% endif %}
         {% endfor %}
-        <span class="fw-bold">{{ work.title }}</span>.<br>
-        <span class="text-muted">{{ work.institution }}</span>.
-      </li>
-    {% endfor %}
-  </ul>
+      </p>
+      <p class="fw-bold">{{ work.title }}</p>
+      <p class="text-muted">{{ work.institution }}</p>
+    </div>
+  </div>
+  {% endfor %}
 
-  <h4 class="fw-semibold mt-4 mb-3" style="font-size: 1.15em;">Conference Presentations</h4>
-  <ul class="list-unstyled border-bottom">
-    {% for conference in site.data.publications.conference_proceedings %}
-      <li class="pb-3 mb-3 border-bottom">
+  <!-- Conference Proceedings Section -->
+  <h3 class="fw-bold border-bottom pb-3 mb-5">Conference Presentations</h3>
+  {% for conference in site.data.publications.presentations %}
+  <div class="row g-4 mb-4">
+    <div class="col-md-12">
+      <p>
         {% assign authors = conference.authors | split: "," %}
         {% for author in authors %}
           {% if author contains conference.bold_name %}
@@ -58,9 +68,12 @@
           {% endif %}
           {% if forloop.last == false %}, {% endif %}
         {% endfor %}
-        ({{ conference.year }}). <span class="fw-bold">{{ conference.title }}</span>.<br>
-        <span class="text-muted">{{ conference.institution }}</span>. {{ conference.conference }}.
-      </li>
-    {% endfor %}
-  </ul>
+      </p>
+      <p class="fw-bold">{{ conference.title }}</p>
+      <p class="text-muted">{{ conference.institution }}</p>
+      <p>{{ conference.conference }}</p>
+    </div>
+  </div>
+  {% endfor %}
+
 </div>
