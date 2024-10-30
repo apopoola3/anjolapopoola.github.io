@@ -1,3 +1,16 @@
+
+research: |
+  **Research Interests:**
+  
+  - Application of machine learning in healthcare.
+  - Social welfare and predictive analytics.
+  
+  **Methodologies:**
+  
+  - Random forest classifier.
+  - Kalman filtering.
+  - Ensemble methods for survival analysis.
+
 publications:
   - authors: "Popoola, A., Frediani, J., Hartman, T. and Paynabar, K."
     bold_name: "Popoola, A."

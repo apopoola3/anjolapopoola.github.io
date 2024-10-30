@@ -46,11 +46,13 @@ layout: default
 <div class="container">
   <h4 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Updates</h4>
   <ul class="list-unstyled">
-    {% for update in site.data.updates.updates %}
+    {% for update in site.data.updates %}
       <li class="mb-1">
-        <strong>{{ update.date }}</strong> 
+        <!-- Date in Bold -->
+        <strong>{{ update.date }}</strong> - 
+        <!-- Text with Link Embedded -->
         {% if update.link_text and update.link_url %}
-          {{ update.text | replace: update.link_text, "<a href='" | append: update.link_url | append: "' target='_blank'>" | append: update.link_text | append: "</a>" | markdownify }}
+          {{ update.text | markdownify | replace: update.link_text, "<a href='" | append: update.link_url | append: "' target='_blank'>" | append: update.link_text | append: "</a>" }}
         {% else %}
           {{ update.text | markdownify }}
         {% endif %}
