@@ -22,7 +22,7 @@ layout: default
 
 <div class="row g-4 mb-5">
   <div class="col-12">
-    <h3 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Selected Awards and Honors</h3>
+    <h4 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Selected Awards and Honors</h4>
     <ul class="list-unstyled">
       {% for award in site.data.settings.awards %}
         <li class="mb-2">
@@ -41,4 +41,24 @@ layout: default
       {% endfor %}
     </ul>
   </div>
+</div>
 
+<div class="row g-4 mb-5">
+  <div class="col-12 col-md-6">
+    <h4 class="fw-bold">Updates</h4>
+    <ul class="list-unstyled">
+      {% for update in site.data.updates %}
+        <li class="mb-2">
+          <!-- Date in Bold -->
+          <strong>{{ update.date }}</strong> 
+          <!-- Text with optional link -->
+          {% if update.link_text and update.link_url %}
+            {{ update.text | replace: update.link_text, "<a href='" | append: update.link_url | append: "' target='_blank'>" | append: update.link_text | append: "</a>" | markdownify }}
+          {% else %}
+            {{ update.text | markdownify }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
