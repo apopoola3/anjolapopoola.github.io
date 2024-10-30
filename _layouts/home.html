@@ -44,15 +44,11 @@ layout: default
 </div>
 
 <div class="container">
-
-  <!-- Updates Section -->
   <h3 class="fw-bold text-primary mb-3">Recent Updates</h3>
   <ul class="list-unstyled">
-    {% for update in site.data.updates.updates %}
+    {% for update in site.data.updates %}
       <li class="mb-1">
-        <!-- Date in Bold -->
         <strong>{{ update.date }}</strong> 
-        <!-- Text with optional link -->
         {% if update.link_text and update.link_url %}
           {{ update.text | replace: update.link_text, "<a href='" | append: update.link_url | append: "' target='_blank'>" | append: update.link_text | append: "</a>" | markdownify }}
         {% else %}
@@ -61,5 +57,4 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
 </div>
