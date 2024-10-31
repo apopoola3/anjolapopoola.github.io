@@ -54,16 +54,16 @@ Teaching_Certificates:
 
 service_activities:
 
-- title: "INFORMS Georgia Tech Student Chapter"
-    image: "INFORMS_chapter.jpg"
-    entries:
-      - date: "2022-2024"
-        text: "Vice President,"
-        links:
-          - text: "Georgia Tech Chapter"
-            url: "https://sites.gatech.edu/informs-isye/"
-          - text: " - Received Summa Cum Laude Award"
-            url: "https://www.informs.org/Recognizing-Excellence/INFORMS-Prizes/Student-Chapter-Awards"
+  - title: "INFORMS Georgia Tech Student Chapter"
+      image: "INFORMS_chapter.jpg"
+      entries:
+        - date: "2022-2024"
+          text: "Vice President,"
+          links:
+            - text: "Georgia Tech Chapter"
+              url: "https://sites.gatech.edu/informs-isye/"
+            - text: " - Received Summa Cum Laude Award"
+              url: "https://www.informs.org/Recognizing-Excellence/INFORMS-Prizes/Student-Chapter-Awards"
 
   - title: "Georgia institute of Technology"
     image: "gt.PNG"
