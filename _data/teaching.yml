@@ -49,3 +49,47 @@ Teaching_Assistant:
 Teaching_Certificates:
   - title: "Center for Teaching & Learning (CTL) Tech to Teaching Certificate"
   - title: "Center for the Integration of Research, Teaching & Learning Associate Teaching Certificate"
+
+
+
+service_activities:
+
+- title: "INFORMS Georgia Tech Student Chapter"
+    image: "INFORMS_chapter.jpg"
+    entries:
+      - date: "2022-2024"
+        text: "Vice President,"
+        links:
+          - text: "Georgia Tech Chapter"
+            url: "https://sites.gatech.edu/informs-isye/"
+          - text: " - Received Summa Cum Laude Award"
+            url: "https://www.informs.org/Recognizing-Excellence/INFORMS-Prizes/Student-Chapter-Awards"
+
+  - title: "Georgia institute of Technology"
+    image: "gt.PNG"
+    entries:
+      - date: "2020"
+        text: "Graduate Student Volunteer,"
+        links:
+          - text: "Data Science for Social Good"
+            url: "https://ds4sg.gatech.edu"
+      - date: "2020"
+        text: "Graduate Student Volunteer,"
+        links:
+          - text: "FOCUS Program"
+            url: "https://omed.gatech.edu/programs/focus-program/"
+
+
+  - title: "Georgia institute of Technology"
+    image: "gt.PNG"
+    entries:
+      - date: "2020"
+        text: "Graduate Student Volunteer,"
+        links:
+          - text: "Data Science for Social Good"
+            url: "https://ds4sg.gatech.edu"
+      - date: "2020"
+        text: "Graduate Student Volunteer,"
+        links:
+          - text: "FOCUS Program"
+            url: "https://omed.gatech.edu/programs/focus-program/"
