@@ -79,11 +79,11 @@ layout: default
   <h3 class="fw-bold border-bottom pb-3 mb-5">Service and Professional Activities</h3>
 
   <div class="row row-cols-1 row-cols-md-3 g-4">
-    {% for activity in site.data.service_activities %}
+    {% for activity in site.data.teaching.service_activities %}
       <div class="col text-center">
         <!-- Activity Image with uniform sizing -->
         <div class="img-container">
-          <img src="{{ site.github.url }}/assets/img/{{ activity.image }}" alt="{{ activity.title }}" class="activity-image mb-3">
+          <img src="{{ site.github.url }}/service/{{ activity.image }}" alt="{{ activity.title }}" class="activity-image mb-3">
         </div>
 
         <!-- Activity Title -->
