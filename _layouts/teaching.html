@@ -77,36 +77,31 @@ layout: default
 
 <div class="container">
   <h3 class="fw-bold border-bottom pb-3 mb-5">Service and Professional Activities</h3>
+  
+  <div class="row">
+    {% for activity in site.data.service_activities %}
+    <div class="col-md-4 mb-4 text-center">
+      <!-- Centered Title -->
+      <h5 class="fw-bold">{{ activity.title }}</h5>
+      <!-- Image with constrained width -->
+      <img src="{{ site.github.url }}/assets/img/{{ activity.image }}" alt="{{ activity.title }}" style="max-width: 100%; height: auto; margin-bottom: 10px;">
 
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    {% for activity in site.data.teaching.service_activities %}
-      <div class="col text-center">
-        <!-- Activity Image with uniform sizing -->
-        <div class="img-container">
-          <img src="{{ site.github.url }}/service/{{ activity.image }}" alt="{{ activity.title }}" class="activity-image mb-3">
-        </div>
-
-        <!-- Activity Title -->
-        <h5 class="fw-bold">{{ activity.title }}</h5>
-
-        <!-- Activity Entries with date, text, and links -->
-        <ul class="list-unstyled">
-          {% for entry in activity.entries %}
-            <li>
-              {% if entry.date %}
-                <small><strong>{{ entry.date }}</strong></small><br>
-              {% endif %}
-              {{ entry.text }}
-              
-              {% if entry.links %}
-                {% for link in entry.links %}
-                  <a href="{{ link.url }}" target="_blank">{{ link.text }}</a>{% if forloop.last == false %}, {% endif %}
-                {% endfor %}
-              {% endif %}
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+      <!-- Entries for each activity -->
+      <ul class="list-unstyled text-start">
+        {% for entry in activity.entries %}
+        <li class="mb-2">
+          <!-- Date as part of the sentence -->
+          <strong>{{ entry.date }}</strong> - {{ entry.text }}
+          <!-- Links -->
+          {% if entry.links %}
+            {% for link in entry.links %}
+              <a href="{{ link.url }}" target="_blank">{{ link.text }}</a>{% if forloop.last == false %}, {% endif %}
+            {% endfor %}
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
     {% endfor %}
   </div>
 </div>

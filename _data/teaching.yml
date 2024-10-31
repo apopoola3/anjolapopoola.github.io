@@ -62,7 +62,7 @@ service_activities:
           links:
             - text: "Georgia Tech Chapter"
               url: "https://sites.gatech.edu/informs-isye/"
-            - text: " - Received Summa Cum Laude Award"
+            - text: "Received Summa Cum Laude Award"
               url: "https://www.informs.org/Recognizing-Excellence/INFORMS-Prizes/Student-Chapter-Awards"
 
   - title: "Georgia institute of Technology"
