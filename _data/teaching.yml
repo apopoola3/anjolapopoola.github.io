@@ -100,8 +100,8 @@ service_activities:
             url: "https://omed.gatech.edu/programs/focus-program/"
 
   - title: "Institute for Operations Research and the Management Sciences"
-  image: "INFORMS.JPG"
-  entries:
+    image: "INFORMS.JPG"
+    entries:
     - date: "2024"
       text: "Session Presenter"
       links:
@@ -111,8 +111,8 @@ service_activities:
       text: "Member"
 
   - title: "Lincoln University of PA"
-  image: "LINCOLN.JPG"
-  entries:
+    image: "LINCOLN.JPG"
+    entries:
     - date: "2016-2018"
       text: "Senator, Class of 2019 Student Government Association"
     - date: "2017-2018"
