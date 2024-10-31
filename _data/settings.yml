@@ -27,7 +27,7 @@ social:
 - {icon: 'envelope', link: 'mailto:apopoola3@gatech.edu'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/anjpopoola/'}
 - {icon: 'google scholar', link: 'https://scholar.google.com/citations?user=HnjeRToAAAAJ&hl=en&oi=ao'}
-- {icon: 'researchgate', link: 'https://www.researchgate.net/profile/Anjolaoluwa-Popoola'}
+- {icon: 'github', link: 'https://github.com/apopoola3'}
 
 contacts:
 - {name: 'Anjolaoluwa Popoola', title: 'PhD. Machine Learning Student', department: 'H. Milton Stewart School of Industrial and Systems Engineering', institution: 'Georgia Institute of Technology', institution_address: '755 Ferst Dr NW, Atlanta, GA 30332', office: 'Main 435', email: 'apopoola3@gatech.edu', image: 'assets/img/headshot.jpg'}
