@@ -15,7 +15,7 @@ layout: default
 
   </div>
   <div class="col-12 col-md-6 d-flex justify-content-center">
-    <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" class="img-fluid" style="max-width: 100%; margin-left: 20px;">
+    <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" class="img-fluid" style="max-width: 70%; margin-left: 2px;">
   </div>
 </div>
 
@@ -31,9 +31,9 @@ layout: default
 
         <!-- Full text with embedded link, ensuring no duplication -->
         {% if update.link_text and update.link_url %}
-          {{ update.text | replace_first: update.link_text, "<a href='" | append: update.link_url | append: "' target='_blank'>" | append: update.link_text | append: "</a>" | markdownify }}
+          {{ update.text | replace_first: update.link_text, "<a href='" | append: update.link_url | append: "' target='_blank'>" | append: update.link_text | append: "</a>" }}
         {% else %}
-          {{ update.text | markdownify }}
+          {{ update.text }}
         {% endif %}
       </li>
     {% endfor %}
