@@ -15,21 +15,16 @@ layout: default
 
   </div>
   <div class="col-12 col-md-6 d-flex justify-content-center">
-    <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" class="img-fluid" style="max-width: 70%;">
+    <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" class="img-fluid responsive-image" style="max-width: 100%; border-radius: 5px;">
   </div>
 </div>
-
-
 
 <div class="container">
   <h4 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Updates</h4>
   <ul class="list-unstyled">
     {% for update in site.data.updates.updates %}
       <li class="mb-1">
-        <!-- Date in Bold -->
         <strong>{{ update.date }}</strong>
-
-        <!-- Full text with embedded link, ensuring no duplication -->
         {% if update.link_text and update.link_url %}
           {{ update.text | replace_first: update.link_text, "<a href='" | append: update.link_url | append: "' target='_blank'>" | append: update.link_text | append: "</a>" }}
         {% else %}
@@ -39,3 +34,19 @@ layout: default
     {% endfor %}
   </ul>
 </div>
+
+<style>
+  /* Adjusts the size of the image for small and large screens */
+  .responsive-image {
+    max-width: 70%; /* Sets max width for large screens */
+    object-fit: cover; /* Ensures image keeps its aspect ratio */
+  }
+
+  /* For small screens (mobile) */
+  @media (max-width: 576px) {
+    .responsive-image {
+      max-width: 100%; /* Full width on smaller screens */
+      height: auto; /* Keeps the height auto-adjusted */
+    }
+  }
+</style>
