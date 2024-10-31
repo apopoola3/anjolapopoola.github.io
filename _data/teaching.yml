@@ -65,20 +65,25 @@ service_activities:
             - text: "Received Summa Cum Laude Award"
               url: "https://www.informs.org/Recognizing-Excellence/INFORMS-Prizes/Student-Chapter-Awards"
 
-  - title: "Institute for Operations Research and the Management Sciences"
-    image: "INFORMS.JPG"
+  - title: "IISE Annual Conference"
+    image: "IISE.PNG"
     entries:
+      - date: "2023"
+        text: "Session Chair"
+        links:
+          - text: "Machine Learning and Classification Models for Health Data"
+            url: "https://iise.confex.com/iise/2023/meetingapp.cgi/Session/1149"
       - date: "2022- Present"
         text: "Member"
-        links:
-          - text: "Data Science for Social Good"
-            url: "https://ds4sg.gatech.edu"
-      - date: "2020"
-        text: "Graduate Student Volunteer,"
-        links:
-          - text: "FOCUS Program"
-            url: "https://omed.gatech.edu/programs/focus-program/"
 
+  - title: "Center for Academics, Success and Equity"
+    image: "CASE.jpeg"
+    entries:
+      - date: "2024"
+        text: "Graduate Student Assistant"
+        links:
+          - text: "iEXPERIENCE High School Outreach"
+            url: "https://case.isye.gatech.edu/equity-initiatives/iexperience"
 
   - title: "Georgia institute of Technology"
     image: "gt.PNG"
@@ -93,3 +98,24 @@ service_activities:
         links:
           - text: "FOCUS Program"
             url: "https://omed.gatech.edu/programs/focus-program/"
+
+  - title: "Institute for Operations Research and the Management Sciences"
+  image: "INFORMS.JPG"
+  entries:
+    - date: "2024"
+      text: "Session Presenter"
+      links:
+        - text: "OR and Other Analytical Approaches for Healthcare Systems"
+          url: "https://meetings.informs.org/wordpress/seattle2024/agenda/"
+    - date: "2022"
+      text: "Member"
+
+  - title: "Lincoln University of PA"
+  image: "LINCOLN.JPG"
+  entries:
+    - date: "2016-2018"
+      text: "Senator, Class of 2019 Student Government Association"
+    - date: "2017-2018"
+      text: "Programs Chair and Senator, National Society of Black Engineers (NSBE) LU Chapter"
+    - date: "2016-2017"
+      text: "Secretary, The Mathematics Club"
