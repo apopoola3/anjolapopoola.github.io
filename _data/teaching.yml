@@ -1,0 +1,51 @@
+
+Guest_Lecturer:
+
+  - title: "ISyE 2027 Probability with Applications "
+    level: "Undergraduate Level"
+    institution: "Georgia Tech"
+    semesters: "Summer 2023"
+    instructor: "Dr. Damon Williams"
+    instructor_link: "https://coe.gatech.edu/directory/person/damon-p-williams-phd"
+    class: "Limit Theorems and Applications: Law of Large numbers, Markov's Inequality, Chebyshev's Inequality, etc."
+
+
+Teaching_Assistant:
+
+  - title: "ISyE 8803 Topics on High-Dimensional Data Analytics"
+    level: "Graduate Level"
+    institution: "Georgia Tech"
+    semesters: "Spring 2024; Summer 2024; Fall 2024;"
+    instructor: "Dr. Kamran Paynabar"
+    instructor_link: "https://sites.gatech.edu/kamran-paynabar/"
+    materials: "Exam 1, Exam 2, Solution code"
+
+  - title: "ISyE 3770 Statistics and Applications"
+    level: "Undergraduate Level"
+    institution: "Georgia Tech"
+    semesters: "Fall 2019; Spring 2020;"
+    instructor: "Dr. Ketenci Tuba"
+    instructor_link: "https://www.isye.gatech.edu/users/tuba-ketenci"
+    materials: "Recitation lectures, Problem Questions, Problem Solutions"
+
+  - title: "MAT 121 Calculus I"
+    level: "Undergraduate Level"
+    institution: "Lincoln University"
+    semesters: "Spring 2017; Fall 2017; Spring 2018; Fall 2018;"
+    instructor: "Dr. Tong Banh"
+    instructor_link: "https://www.lincoln.edu/directory/faculty-and-staff/tong-banh.html"
+    materials: "Office hours Problems and Solutions"
+
+  - title: "MAT 221 Calculus III"
+    level: "Undergraduate Level"
+    institution: "Lincoln University"
+    semesters: "Spring 2019; "
+    instructor: "Dr. Moses Haimbodi"
+    instructor_link: "https://www.lincoln.edu/directory/faculty-and-staff/moses-haimbodi.html"
+    materials: "Office hours Problems and Solutions"
+
+
+
+Teaching_Certificates:
+  - title: "Center for Teaching & Learning (CTL) Tech to Teaching Certificate"
+  - title: "Center for the Integration of Research, Teaching & Learning Associate Teaching Certificate"

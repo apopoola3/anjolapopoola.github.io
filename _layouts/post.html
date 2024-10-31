@@ -8,3 +8,25 @@ layout: default
     {{ content }}
   </div>
 </div>
+
+
+<!--for safe keeping: -->
+
+<!-- Student Instructor Section -->
+<h5 class="fw-bold">Student Instructor</h5>
+<ul class="list-unstyled mb-4">
+  {% for course in site.data.teaching.Student_Instructor %}
+    <li class="mb-3">
+      <!-- Course Title, Level, Institution -->
+      <strong>{{ course.title }}</strong>, {{ course.level }}, <em>{{ course.institution }}</em><br>
+      
+      <!-- Semesters -->
+      {{ course.semesters }}<br>
+
+      <!-- Materials -->
+      {% if course.materials %}
+        Materials created: {{ course.materials }}
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>

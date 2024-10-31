@@ -5,11 +5,6 @@ menu:
 - {name: 'Teaching and Service', url: '/teaching'}
 - {name: 'Contact', url: '/contact'}
 
-teaching:
-- {name: 'Primary Investigator', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/primary-investigator.jpg', url: 'primary-investigator'}
-- {name: 'Lab Technician', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/lab-technician.jpg', url: 'lab-technician'}
-- {name: 'Graduate Student', title: 'Researcher', department: 'Physics & Astronomy', institution: 'Some University', institution_address: '1 Main Street, Canada', phone: '(000) 000-0000', email: 'hello@university.edu', office: 'Science Building 505', image: 'assets/img/graduate-student.jpg', url: 'graduate-student'}
-
 education:
   - {degree: "PhD Student, Machine Learning", year: "Started 2021", institution: "Georgia Institute of Technology", advisor: "Dr. Kamran Paynabar", advisor_link: "https://www.isye.gatech.edu/users/kamran-paynabar", minor: "Health Systems Leadership"}
   - {degree: "MSc. in Operations Research", year: 2021, institution: "Georgia Institute of Technology"}
@@ -19,9 +14,11 @@ awards:
   - {title_main: "George Fellowship", title_linked: "Georgia Institute of Technology", year: "2024", link_url: "https://www.isye.gatech.edu/academics/fellowships/george-fellowship-program"}
   - {title_main: "Future BA Prof Program Fellow", title_linked: "Tippie College of Business, University of Iowa", year: "2024", link_url: "https://tippie.uiowa.edu/news-events/events/business-analytics-futurebaprof"}
   - {title_main: "Trailblazers in Engineering Fellow", title_linked: "Purdue University", year: "2023", link_url: "https://engineering.purdue.edu/Engr/Trailblazers"}
+  - {title_main: "Graduate Retaining Inspirational Scholars in Technology and Engineering Fellow", title_linked: "College of Engineering, Georgia Tech", year: "2024", link_url: "https://ceed.gatech.edu/grad-rise#:~:text=The%20Graduate%20Retaining%20Inspirational%20Scholars,nontraditional%20technology%20and%20engineering%20students."}
   - {title_main: "Master Modeler Competition, Bronze Winner", title_linked: "Georgia Tech", year: "2022"}
   - {title_main: "Best Student Poster Award", title_linked: "Transportation Research Board Conference", year: "2018", link_url: "https://trb-annual-meeting.nationalacademies.org"}
   - {title_main: "Dwight David Eisenhower Transportation Fellowship", year: "2018", link_url: "https://highways.dot.gov/careers/dwight-david-eisenhower-transportation-fellowship-program"}
+  - {title_main: "John M. Tutt Award for Best Student in Mathematics", title_linked: "Mathematics Department, Lincoln University of PA", year: "2018" }
 
 social:
 - {icon: 'envelope', link: 'mailto:apopoola3@gatech.edu'}
