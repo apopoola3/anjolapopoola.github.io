@@ -7,66 +7,73 @@ layout: default
 <div class="container">
   <h3 class="fw-bold border-bottom pb-3 mb-5">Teaching Experience</h3>
 
-  <!-- Guest Lecturer Section -->
-  <h5 class="fw-bold">Guest Lecturer</h5>
-  <ul class="list-unstyled mb-4">
-    {% for course in site.data.teaching.Guest_Lecturer %}
-      <li class="mb-3">
-        <!-- Course Title, Level, Institution -->
-        <strong>{{ course.title }}</strong>, {{ course.level }}, <em>{{ course.institution }}</em><br>
-        
-        <!-- Semesters -->
-        {{ course.semesters }}<br>
+  <div class="row">
+    <!-- Guest Lecturer Column -->
+    <div class="col-md-4">
+      <h5 class="fw-bold text-center">Guest Lecturer</h5>
+      <ul class="list-unstyled mb-4">
+        {% for course in site.data.teaching.Guest_Lecturer %}
+          <li class="mb-3">
+            <!-- Course Title, Level, Institution -->
+            <strong>{{ course.title }}</strong>, {{ course.level }}, <em>{{ course.institution }}</em><br>
 
-        <!-- Instructor -->
-        {% if course.instructor and course.instructor_link %}
-          Instructor: <a href="{{ course.instructor_link }}" target="_blank">{{ course.instructor }}</a><br>
-        {% elsif course.instructor %}
-          Instructor: {{ course.instructor }}<br>
-        {% endif %}
+            <!-- Semesters -->
+            {{ course.semesters }}<br>
 
-        <!-- Class Topics -->
-        {% if course.class %}
-          Class topics: {{ course.class }}
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
+            <!-- Instructor -->
+            {% if course.instructor and course.instructor_link %}
+              Instructor: <a href="{{ course.instructor_link }}" target="_blank">{{ course.instructor }}</a><br>
+            {% elsif course.instructor %}
+              Instructor: {{ course.instructor }}<br>
+            {% endif %}
 
-  <!-- Teaching Assistant Section -->
-  <h5 class="fw-bold">Teaching Assistant</h5>
-  <ul class="list-unstyled mb-4">
-    {% for course in site.data.teaching.Teaching_Assistant %}
-      <li class="mb-3">
-        <!-- Course Title, Level, Institution -->
-        <strong>{{ course.title }}</strong>, {{ course.level }}, <em>{{ course.institution }}</em><br>
-        
-        <!-- Semesters -->
-        {{ course.semesters }}<br>
+            <!-- Class Topics -->
+            {% if course.class %}
+              Class topics: {{ course.class }}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
 
-        <!-- Instructor -->
-        {% if course.instructor and course.instructor_link %}
-          Instructor: <a href="{{ course.instructor_link }}" target="_blank">{{ course.instructor }}</a><br>
-        {% elsif course.instructor %}
-          Instructor: {{ course.instructor }}<br>
-        {% endif %}
+    <!-- Teaching Assistant Column -->
+    <div class="col-md-4">
+      <h5 class="fw-bold text-center">Teaching Assistant</h5>
+      <ul class="list-unstyled mb-4">
+        {% for course in site.data.teaching.Teaching_Assistant %}
+          <li class="mb-3">
+            <!-- Course Title, Level, Institution -->
+            <strong>{{ course.title }}</strong>, {{ course.level }}, <em>{{ course.institution }}</em><br>
 
-        <!-- Materials -->
-        {% if course.materials %}
-          Materials designed: {{ course.materials }}
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
+            <!-- Semesters -->
+            {{ course.semesters }}<br>
 
-  <!-- Teaching Certificate Section -->
-  <h5 class="fw-bold">Teaching Certificate</h5>
-  <ul class="list-unstyled mb-4">
-    {% for certificate in site.data.teaching.Teaching_Certificates %}
-      <li class="mb-2">
-        <span>&#8226;</span> {{ certificate.title }}
-      </li>
-    {% endfor %}
-  </ul>
+            <!-- Instructor -->
+            {% if course.instructor and course.instructor_link %}
+              Instructor: <a href="{{ course.instructor_link }}" target="_blank">{{ course.instructor }}</a><br>
+            {% elsif course.instructor %}
+              Instructor: {{ course.instructor }}<br>
+            {% endif %}
 
+            <!-- Materials -->
+            {% if course.materials %}
+              Materials designed: {{ course.materials }}
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <!-- Teaching Certificate Column -->
+    <div class="col-md-4">
+      <h5 class="fw-bold text-center">Teaching Certificate</h5>
+      <ul class="list-unstyled mb-4">
+        {% for certificate in site.data.teaching.Teaching_Certificates %}
+          <li class="mb-2">
+            <span>&#8226;</span> {{ certificate.title }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
 </div>
