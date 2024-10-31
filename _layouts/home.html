@@ -13,9 +13,49 @@ layout: default
       </a>
     </p>
 
-  </div>
-  <div class="col-12 col-md-6 d-flex justify-content-center">
-    <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" class="img-fluid" style="max-width: 100%; margin-left: 1%;">
+  
+    <!-- Picture and Education Section -->
+    <div class="col-12 col-md-6 d-flex flex-column align-items-center">
+      <!-- Picture Section -->
+      <div class="d-flex justify-content-center mb-4">
+        <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" 
+             class="img-fluid" 
+             style="max-width: 100%; width: 300px; height: 300px; object-fit: cover; object-position: top; border-radius: 5px;">
+      </div>
+
+      <!-- Education Section Below Picture -->
+      <div class="w-100">
+        <h3 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Education</h3>
+        <ul class="list-unstyled">
+          {% for edu in site.data.settings.education %}
+            <li class="mb-3 d-flex align-items-start">
+              <i class="fas fa-graduation-cap me-3" style="font-size: 1.5em;"></i> <!-- Education icon -->
+              <div>
+                <p class="mb-0 fw-bold">{{ edu.degree }}, {{ edu.year }}</p>
+                <small class="text-muted">{{ edu.institution }}</small>
+                
+                {% if edu.minor %}
+                  <p class="mb-0 text-muted"><small>Minor: {{ edu.minor }}</small></p>
+                {% endif %}
+                
+                {% if edu.advisor %}
+                  <p class="mb-0 text-muted">
+                    <small>Advisor: 
+                      {% if edu.advisor_link %}
+                        <a href="{{ edu.advisor_link }}" target="_blank">{{ edu.advisor }}</a>
+                      {% else %}
+                        {{ edu.advisor }}
+                      {% endif %}
+                    </small>
+                  </p>
+                {% endif %}
+                
+              </div>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
 
