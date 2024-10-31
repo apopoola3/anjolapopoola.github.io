@@ -1,4 +1,4 @@
 ---
 layout: education
-title: "Education"
+title: "About Me"
 ---

@@ -1,6 +1,6 @@
 menu:
 - {name: 'Home', url: '/home'}
-- {name: 'Education', url: '/education'}
+- {name: 'About Me', url: '/education'}
 - {name: 'Research', url: '/research'}
 - {name: 'Teaching and Service', url: '/teaching'}
 - {name: 'Contact', url: '/contact'}

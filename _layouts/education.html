@@ -4,34 +4,57 @@ layout: default
 
 {{ content }}
 
-<h3 class="fw-bold border-bottom pb-3 mb-5">Education</h3>
-{% for edu in site.data.settings.education %}
-<div class="row g-5 mb-5">
-  <div class="col-md-12">
-    <div class="d-flex align-items-start mb-3">
-      <i class="fas fa-graduation-cap me-3" style="font-size: 1.5em;"></i> <!-- Education icon -->
-      <div>
-        <h5 class="fw-bold mb-0">{{ edu.degree }}, {{ edu.year }}</h5>
-        <small class="text-muted">{{ edu.institution }}</small>
-        
-        {% if edu.minor %}
-          <p class="mb-0 text-muted"><small>Minor: {{ edu.minor }}</small></p>
-        {% endif %}
-        
-        {% if edu.advisor %}
-          <p class="mb-0 text-muted">
-            <small>Advisor: 
-              {% if edu.advisor_link %}
-                <a href="{{ edu.advisor_link }}" target="_blank">{{ edu.advisor }}</a>
-              {% else %}
-                {{ edu.advisor }}
-              {% endif %}
-            </small>
-          </p>
-        {% endif %}
-        
-      </div>
-    </div>
+<div class="w-100">
+  <h3 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Education</h3>
+  <ul class="list-unstyled">
+    {% for edu in site.data.settings.education %}
+      <li class="mb-3 d-flex align-items-start">
+        <i class="fas fa-graduation-cap me-3" style="font-size: 1.5em;"></i> <!-- Education icon -->
+        <div>
+          <p class="mb-0 fw-bold">{{ edu.degree }}, {{ edu.year }}</p>
+          <small class="text-muted">{{ edu.institution }}</small>
+          
+          {% if edu.minor %}
+            <p class="mb-0 text-muted"><small>Minor: {{ edu.minor }}</small></p>
+          {% endif %}
+          
+          {% if edu.advisor %}
+            <p class="mb-0 text-muted">
+              <small>Advisor: 
+                {% if edu.advisor_link %}
+                  <a href="{{ edu.advisor_link }}" target="_blank">{{ edu.advisor }}</a>
+                {% else %}
+                  {{ edu.advisor }}
+                {% endif %}
+              </small>
+            </p>
+          {% endif %}
+          
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+
+<div class="row g-4 mb-5">
+  <div class="col-12">
+    <h4 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Selected Awards and Honors</h4>
+    <ul class="list-unstyled">
+      {% for award in site.data.settings.awards %}
+        <li class="mb-2">
+          {% if award.link_url %}
+            <a href="{{ award.link_url }}" target="_blank" class="fw-bold">{{ award.title_main }}</a>
+          {% else %}
+            <span class="fw-bold">{{ award.title_main }}</span>
+          {% endif %}
+          {% if award.title_linked %}
+            <span>{{ award.title_linked }}</span>
+          {% endif %}
+          {% if award.year %}
+            , {{ award.year }}
+          {% endif %}
+        </li>
+      {% endfor %}
+    </ul>
   </div>
 </div>
-{% endfor %}

@@ -2,106 +2,38 @@
 layout: default
 ---
 
-<div class="container">
-  <div class="row g-4 mb-5 align-items-start">
-    <!-- About Me Section with a smaller width -->
-    <div class="col-12 col-md-5">
-      <h3 class="fw-bold text-center text-md-start">About Me</h3>
-      <div class="text-center text-md-start">
-        {{ content }}
-      </div>
-      <!-- CV Link -->
-      <p class="mt-3 text-center text-md-start">
-        <a href="{{ site.github.url }}/cv/POPOOLA_CV.pdf" target="_blank" class="fw-bold" style="text-decoration: underline;">
-          [Curriculum Vitae]
-        </a>
-      </p>
-    </div>
-
-    <!-- Picture and Education Section with more width -->
-    <div class="col-12 col-md-7">
-      <!-- Picture Section -->
-      <div class="d-flex justify-content-center mb-4">
-        <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" 
-             class="img-fluid" 
-             style="max-width: 100%; width: 300px; height: 300px; object-fit: cover; object-position: top; border-radius: 5px;">
-      </div>
-
-      <!-- Education Section Below Picture -->
-      <div>
-        <h3 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Education</h3>
-        <ul class="list-unstyled">
-          {% for edu in site.data.settings.education %}
-            <li class="mb-3 d-flex align-items-start">
-              <i class="fas fa-graduation-cap me-3" style="font-size: 1.5em;"></i> <!-- Education icon -->
-              <div>
-                <p class="mb-0 fw-bold">{{ edu.degree }}, {{ edu.year }}</p>
-                <small class="text-muted">{{ edu.institution }}</small>
-                
-                {% if edu.minor %}
-                  <p class="mb-0 text-muted"><small>Minor: {{ edu.minor }}</small></p>
-                {% endif %}
-                
-                {% if edu.advisor %}
-                  <p class="mb-0 text-muted">
-                    <small>Advisor: 
-                      {% if edu.advisor_link %}
-                        <a href="{{ edu.advisor_link }}" target="_blank">{{ edu.advisor }}</a>
-                      {% else %}
-                        {{ edu.advisor }}
-                      {% endif %}
-                    </small>
-                  </p>
-                {% endif %}
-                
-              </div>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
-
-
 <div class="row g-4 mb-5">
-  <div class="col-12">
-    <h4 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Selected Awards and Honors</h4>
-    <ul class="list-unstyled">
-      {% for award in site.data.settings.awards %}
-        <li class="mb-2">
-          {% if award.link_url %}
-            <a href="{{ award.link_url }}" target="_blank" class="fw-bold">{{ award.title_main }}</a>
-          {% else %}
-            <span class="fw-bold">{{ award.title_main }}</span>
-          {% endif %}
-          {% if award.title_linked %}
-            <span>{{ award.title_linked }}</span>
-          {% endif %}
-          {% if award.year %}
-            , {{ award.year }}
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
+  <div class="col-12 col-md-6">
+    <h3 class="fw-bold">About Me</h3>
+    {{ content }}
+
+    <p class="mt-3 text-center text-md-start">
+      <a href="{{ site.github.url }}/cv/POPOOLA_CV.pdf" target="_blank" class="fw-bold" style="text-decoration: underline;">
+        [Curriculum Vitae]
+      </a>
+    </p>
+
+  </div>
+  <div class="col-12 col-md-6 d-flex justify-content-center">
+    <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" class="img-fluid" style="max-width: 100%; margin-left: 20px;">
   </div>
 </div>
+
+
 
 <div class="container">
   <h4 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Updates</h4>
   <ul class="list-unstyled">
     {% for update in site.data.updates.updates %}
       <li class="mb-1">
-        <!-- Date in Bold, followed by the sentence -->
-        <strong>{{ update.date }}</strong> 
+        <!-- Date in Bold -->
+        <strong>{{ update.date }}</strong>
 
-        <!-- Full text with embedded link -->
+        <!-- Full text with embedded link, ensuring no duplication -->
         {% if update.link_text and update.link_url %}
-          {{ update.text | split: update.link_text | first }}
-          <a href="{{ update.link_url }}" target="_blank">{{ update.link_text }}</a>
-          {{ update.text | split: update.link_text | last }}
+          {{ update.text | replace_first: update.link_text, "<a href='" | append: update.link_url | append: "' target='_blank'>" | append: update.link_text | append: "</a>" | markdownify }}
         {% else %}
-          {{ update.text }}
+          {{ update.text | markdownify }}
         {% endif %}
       </li>
     {% endfor %}
