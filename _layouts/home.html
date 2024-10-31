@@ -2,20 +2,26 @@
 layout: default
 ---
 
-<div class="row g-4 mb-5">
-  <div class="col-12 col-md-6">
-    <h3 class="fw-bold">About Me</h3>
-    {{ content }}
-
+<div class="row g-4 mb-5 align-items-center">
+  <!-- About Me Section -->
+  <div class="col-12 col-md-6 order-2 order-md-1">
+    <h3 class="fw-bold text-center text-md-start">About Me</h3>
+    <div class="text-center text-md-start">
+      {{ content }}
+    </div>
+    <!-- CV Link -->
     <p class="mt-3 text-center text-md-start">
       <a href="{{ site.github.url }}/cv/POPOOLA_CV.pdf" target="_blank" class="fw-bold" style="text-decoration: underline;">
         [Curriculum Vitae]
       </a>
     </p>
-
   </div>
-  <div class="col-12 col-md-6 d-flex justify-content-center">
-    <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" class="img-fluid" style="max-width: 100%; margin-left: 20px;">
+
+  <!-- Picture Section -->
+  <div class="col-12 col-md-6 order-1 order-md-2 d-flex justify-content-center">
+    <img src="{{ site.github.url }}/assets/img/headshot.jpg" alt="Home" 
+         class="img-fluid rounded-circle" 
+         style="max-width: 80%; width: 250px; height: auto;">
   </div>
 </div>
 
@@ -46,15 +52,18 @@ layout: default
 <div class="container">
   <h4 class="fw-bold border-bottom pb-3 mb-4 text-center text-md-start">Updates</h4>
   <ul class="list-unstyled">
-    {% for update in site.data.updates.updates %}
+    {% for update in site.data.updates %}
       <li class="mb-1">
         <!-- Date in Bold, followed by the sentence -->
-        <strong>{{ update.date }}</strong>
-        
+        <strong>{{ update.date }}</strong> 
+
+        <!-- Full text with embedded link -->
         {% if update.link_text and update.link_url %}
-          {{ update.text | replace: update.link_text, "<a href='" | append: update.link_url | append: "' target='_blank'>" | append: update.link_text | append: "</a>" | markdownify }}
+          {{ update.text | split: update.link_text | first }}
+          <a href="{{ update.link_url }}" target="_blank">{{ update.link_text }}</a>
+          {{ update.text | split: update.link_text | last }}
         {% else %}
-          {{ update.text | markdownify }}
+          {{ update.text }}
         {% endif %}
       </li>
     {% endfor %}
