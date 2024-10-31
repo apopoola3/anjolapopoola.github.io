@@ -55,8 +55,8 @@ Teaching_Certificates:
 service_activities:
 
   - title: "INFORMS Georgia Tech Student Chapter"
-      image: "INFORMS_chapter.jpg"
-      entries:
+    image: "INFORMS_chapter.jpg"
+    entries:
         - date: "2022-2024"
           text: "Vice President,"
           links:
