@@ -4,17 +4,69 @@ layout: default
 
 {{ content }}
 
-<h3 class="fw-bold border-bottom pb-3 mb-5">Teaching </h3>
-{% for person in site.data.settings.teaching %}
-<div class="row g-5 mb-5">
-  <div class="col-md-6">
-    <h5>{{ person.name }}</h5>
-    <p>Email: {{ person.email }}</p>
-    <p>Phone: {{ person.phone }}</p>
-    <p><a href="{{ site.github.url }}/people/{{ person.url }}">More info</a></p>
-  </div>
-  <div class="col-md-6">
-    <img src="{{ site.github.url }}/{{ person.image }}" alt="Contact" width="100%">
-  </div>
+<div class="container">
+  <h3 class="fw-bold border-bottom pb-3 mb-5">Teaching Experience</h3>
+
+  <!-- Guest Lecturer Section -->
+  <h5 class="fw-bold">Guest Lecturer</h5>
+  <ul class="list-unstyled mb-4">
+    {% for course in site.data.teaching.Guest_Lecturer %}
+      <li class="mb-3">
+        <!-- Course Title, Level, Institution -->
+        <strong>{{ course.title }}</strong>, {{ course.level }}, <em>{{ course.institution }}</em><br>
+        
+        <!-- Semesters -->
+        {{ course.semesters }}<br>
+
+        <!-- Instructor -->
+        {% if course.instructor and course.instructor_link %}
+          Instructor: <a href="{{ course.instructor_link }}" target="_blank">{{ course.instructor }}</a><br>
+        {% elsif course.instructor %}
+          Instructor: {{ course.instructor }}<br>
+        {% endif %}
+
+        <!-- Class Topics -->
+        {% if course.class %}
+          Class topics: {{ course.class }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- Teaching Assistant Section -->
+  <h5 class="fw-bold">Teaching Assistant</h5>
+  <ul class="list-unstyled mb-4">
+    {% for course in site.data.teaching.Teaching_Assistant %}
+      <li class="mb-3">
+        <!-- Course Title, Level, Institution -->
+        <strong>{{ course.title }}</strong>, {{ course.level }}, <em>{{ course.institution }}</em><br>
+        
+        <!-- Semesters -->
+        {{ course.semesters }}<br>
+
+        <!-- Instructor -->
+        {% if course.instructor and course.instructor_link %}
+          Instructor: <a href="{{ course.instructor_link }}" target="_blank">{{ course.instructor }}</a><br>
+        {% elsif course.instructor %}
+          Instructor: {{ course.instructor }}<br>
+        {% endif %}
+
+        <!-- Materials -->
+        {% if course.materials %}
+          Materials designed: {{ course.materials }}
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <!-- Teaching Certificate Section -->
+  <h5 class="fw-bold">Teaching Certificate</h5>
+  <ul class="list-unstyled mb-4">
+    {% for certificate in site.data.teaching.Teaching_Certificates %}
+      <li class="mb-2">
+        <span>&#8226;</span> {{ certificate.title }}
+      </li>
+    {% endfor %}
+  </ul>
+
 </div>
-{% endfor %}
