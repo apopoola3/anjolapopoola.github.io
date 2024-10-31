@@ -65,11 +65,11 @@ service_activities:
             - text: "Received Summa Cum Laude Award"
               url: "https://www.informs.org/Recognizing-Excellence/INFORMS-Prizes/Student-Chapter-Awards"
 
-  - title: "Georgia institute of Technology"
-    image: "gt.PNG"
+  - title: "Institute for Operations Research and the Management Sciences"
+    image: "INFORMS.JPG"
     entries:
-      - date: "2020"
-        text: "Graduate Student Volunteer,"
+      - date: "2022- Present"
+        text: "Member"
         links:
           - text: "Data Science for Social Good"
             url: "https://ds4sg.gatech.edu"

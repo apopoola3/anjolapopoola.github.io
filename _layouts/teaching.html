@@ -79,12 +79,12 @@ layout: default
   <h3 class="fw-bold border-bottom pb-3 mb-5">Service and Professional Activities</h3>
   
   <div class="row">
-    {% for activity in site.data.service_activities %}
+    {% for activity in site.data.teaching.service_activities %}
     <div class="col-md-4 mb-4 text-center">
       <!-- Centered Title -->
       <h5 class="fw-bold">{{ activity.title }}</h5>
       <!-- Image with constrained width -->
-      <img src="{{ site.github.url }}/assets/img/{{ activity.image }}" alt="{{ activity.title }}" style="max-width: 100%; height: auto; margin-bottom: 10px;">
+      <img src="{{ site.github.url }}/service{{ activity.image }}" alt="{{ activity.title }}" style="max-width: 100%; height: auto; margin-bottom: 10px;">
 
       <!-- Entries for each activity -->
       <ul class="list-unstyled text-start">
