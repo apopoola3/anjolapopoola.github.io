@@ -1,7 +1,5 @@
 
 research: |
-  As the world evolves rapidly, leveraging machine learning in healthcare and social welfare has become crucial. These fields are fundamental to humanity, and machine learning offers powerful tools for analyzing data, creating predictive models, and use them for effective decision-making, which can significantly advance these sectors. Healthcare faces challenges like rising treatment costs and chronic diseases, highlighting the need for better management, data interpretability, and predictive modeling. Similarly, social welfare practitioners and policymakers urgently require targeted interventions and equitable resource allocation. The rise of machine learning and artificial intelligence provides the potential to create more efficient, equitable, and effective systems.
-
   My aim is to further explore the creation and utilization of machine learning algorithms for more complex healthcare and humanitarian issues, and this includes other sectors such as energy, sustainability, etc. 
   
   **Research Interests:**
@@ -13,9 +11,9 @@ research: |
   
   **Methodological Interests:**
   
-  - ***Machine Learning and AI:*** Deep Learning, Ensemble Methods, Interpretable AI, High Dimensional Data Analysis.
-  - ***Signals processing and Dynamic Systems Modeling:*** Kalman Filters,Particle Filters, Hidden Markov Models, etc
-  - ***Optimization:*** Convex optimization, Decision-focused Learning, Mixed Integer Programming
+  - Machine Learning and AI: Deep Learning, Ensemble Methods, Interpretable AI, High Dimensional Data Analysis.
+  - Signals processing and Dynamic Systems Modeling:Kalman Filters,Particle Filters, Hidden Markov Models, etc
+  - Optimization: Convex optimization, Decision-focused Learning, Mixed Integer Programming
 
 publications:
   - authors: "Popoola, A., Frediani, J., Hartman, T. and Paynabar, K."
