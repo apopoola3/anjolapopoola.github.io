@@ -13,7 +13,7 @@ research: |
   
   - Machine Learning and AI: Deep Learning, Ensemble Methods, Interpretable AI, High Dimensional Data Analysis.
   - Signals processing and Dynamic Systems Modeling: Kalman Filters,Particle Filters, Hidden Markov Models, etc.
-  - Optimization: Convex optimization, Decision-focused Learning, Mixed Integer Programming
+  - Optimization: Convex optimization, Decision-focused Learning, Sequential Decision-Making, Mixed Integer Programming
 
 publications:
   - authors: "Popoola, A., Frediani, J., Hartman, T. and Paynabar, K."
