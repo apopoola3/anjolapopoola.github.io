@@ -6,7 +6,7 @@ menu:
 - {name: 'Contact', url: '/contact'}
 
 education:
-  - {degree: "PhD Student, Machine Learning", year: "Started 2021", institution: "Georgia Institute of Technology", advisor: "Dr. Kamran Paynabar", advisor_link: "https://www.isye.gatech.edu/users/kamran-paynabar", minor: "Health Systems Leadership"}
+  - {degree: "PhD Candidate, Machine Learning", year: "Started 2021", institution: "Georgia Institute of Technology", advisor: "Dr. Kamran Paynabar", advisor_link: "https://www.isye.gatech.edu/users/kamran-paynabar", minor: "Health Systems Leadership"}
   - {degree: "MSc. in Operations Research", year: 2021, institution: "Georgia Institute of Technology"}
   - {degree: "BSc. in Mathematics", year: 2019, institution: "Lincoln University of Pennsylvania", minor: "Biology"}
 
@@ -27,4 +27,4 @@ social:
 - {icon: 'github', link: 'https://github.com/apopoola3'}
 
 contacts:
-- {name: 'Anjolaoluwa Popoola', title: 'PhD. Machine Learning Student', department: 'H. Milton Stewart School of Industrial and Systems Engineering', institution: 'Georgia Institute of Technology', institution_address: '755 Ferst Dr NW, Atlanta, GA 30332', office: 'Main 435', email: 'apopoola3@gatech.edu', image: 'assets/img/headshot.jpg'}
+- {name: 'Anjolaoluwa Popoola', title: 'PhD. Machine Learning Candidate', department: 'H. Milton Stewart School of Industrial and Systems Engineering', institution: 'Georgia Institute of Technology', institution_address: '755 Ferst Dr NW, Atlanta, GA 30332', office: 'Main 435', email: 'apopoola3@gatech.edu', image: 'assets/img/headshot.jpg'}
