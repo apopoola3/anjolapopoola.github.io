@@ -1,6 +1,9 @@
 updates:
- - pre_link_text: "Admission into ML Ph.D Candidacy at Georgia Institute of Technology "
+ - pre_link_text: "Admission into "
+    link_text: "ML Ph.D Candidacy"
+    post_link_text: ", Georgia Institute of Technology"
     date: "November 2024"
+    link_url: "https://ml.gatech.edu/phd"
 
   - pre_link_text: "The INFORMS GaTech Student Chapter has been awarded the"
     link_text: "Student Chapter Annual Award - Summa Cum Laude"
