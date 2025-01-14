@@ -9,12 +9,12 @@ layout: default
 
   <!-- Guest Lecturer Section -->
   <div class="text-center mb-4">
-    <h5 class="fw-bold">Guest Lecturer</h5>
+    <h5 class="fw-bold">Lecture</h5>
   </div>
-  <div class="d-flex justify-content-center">
-    <div class="col-md-8 mb-3">
-      <ul class="list-unstyled text-center">
-        {% for course in site.data.teaching.Lecture %}
+  <div class="row">
+    {% for course in site.data.teaching.Lecture %}
+      <div class="col-md-6 mb-3">
+        <ul class="list-unstyled">
           <li>
             <strong>{{ course.title }}</strong>, {{ course.level }}, <em>{{ course.institution }}</em><br>
             {{ course.semesters }}<br>
@@ -27,9 +27,9 @@ layout: default
               Class topics: {{ course.class }}
             {% endif %}
           </li>
-        {% endfor %}
-      </ul>
-    </div>
+        </ul>
+      </div>
+    {% endfor %}
   </div>
 
   <!-- Teaching Assistant Section -->
