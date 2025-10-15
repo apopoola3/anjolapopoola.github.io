@@ -1,4 +1,10 @@
 updates:
+  - pre_link_text: "Successful "
+    link_text: "ML Ph.D Defense"
+    post_link_text: ", Georgia Institute of Technology"
+    date: "August 2025"
+    link_url: "https://ml.gatech.edu/phd"
+
   - pre_link_text: "Admission into "
     link_text: "ML Ph.D Candidacy"
     post_link_text: ", Georgia Institute of Technology"
