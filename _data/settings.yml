@@ -27,4 +27,4 @@ social:
 - {icon: 'github', link: 'https://github.com/apopoola3'}
 
 contacts:
-- {name: 'Anjolaoluwa Popoola', title: 'Postdoctoral Research Scholar', department: 'Tippie COllege of Business', institution: 'University of Iowa', institution_address: 'Iowa City, IA', office: 'S361 PBB', email: 'anjolaoluwa-popoola@uiowa.edu', image: 'assets/img/headshot.jpg'}
+- {name: 'Anjolaoluwa Popoola', title: 'Postdoctoral Research Scholar', department: 'Tippie College of Business', institution: 'University of Iowa', institution_address: 'Iowa City, IA', office: 'S361 PBB', email: 'anjolaoluwa-popoola@uiowa.edu', image: 'assets/img/headshot.jpg'}
