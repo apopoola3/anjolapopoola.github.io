@@ -6,7 +6,7 @@ menu:
 - {name: 'Contact', url: '/contact'}
 
 education:
-  - {degree: "PhD Candidate, Machine Learning", year: "Started 2021", institution: "Georgia Institute of Technology", advisor: "Dr. Kamran Paynabar", advisor_link: "https://www.isye.gatech.edu/users/kamran-paynabar", minor: "Health Systems Leadership"}
+  - {degree: "PhD Candidate, Machine Learning", year: "2025", institution: "Georgia Institute of Technology", advisor: "Dr. Kamran Paynabar", advisor_link: "https://www.isye.gatech.edu/users/kamran-paynabar", minor: "Health Systems Leadership"}
   - {degree: "MSc. in Operations Research", year: 2021, institution: "Georgia Institute of Technology"}
   - {degree: "BSc. in Mathematics", year: 2019, institution: "Lincoln University of Pennsylvania", minor: "Biology"}
 
@@ -21,10 +21,10 @@ awards:
   - {title_main: "John M. Tutt Award for Best Student in Mathematics", title_linked: "Mathematics Department, Lincoln University of PA", year: "2018" }
 
 social:
-- {icon: 'envelope', link: 'mailto:apopoola3@gatech.edu'}
+- {icon: 'envelope', link: 'mailto:anjolaoluwa-popoola@uiowa.edu'}
 - {icon: 'linkedin', link: 'https://www.linkedin.com/in/anjpopoola/'}
 - {icon: 'google scholar', link: 'https://scholar.google.com/citations?user=HnjeRToAAAAJ&hl=en&oi=ao'}
 - {icon: 'github', link: 'https://github.com/apopoola3'}
 
 contacts:
-- {name: 'Anjolaoluwa Popoola', title: 'PhD. Machine Learning Candidate', department: 'H. Milton Stewart School of Industrial and Systems Engineering', institution: 'Georgia Institute of Technology', institution_address: '755 Ferst Dr NW, Atlanta, GA 30332', office: 'Main 435', email: 'apopoola3@gatech.edu', image: 'assets/img/headshot.jpg'}
+- {name: 'Anjolaoluwa Popoola', title: 'Postdoctoral Research Scholar', department: 'Tippie COllege of Business', institution: 'University of Iowa', institution_address: 'Iowa City, IA', office: 'S361 PBB', email: 'anjolaoluwa-popoola@uiowa.edu', image: 'assets/img/headshot.jpg'}
